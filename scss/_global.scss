@@ -1,0 +1,81 @@
+nav li{
+    a{
+        font-weight: bold;
+        font-size: larger;
+        color: $dark;
+        &:hover{
+            color: $warning;
+        }
+    }
+}
+
+#calendrier{
+    color: $dark;
+    background-color: $blanc;
+    padding: 5px 10px;
+    border: 1px $dark solid;
+    &:hover{
+        background-color: $dark !important;
+    color: $blanc !important;
+    }
+}
+
+.btn-dark {
+    border-radius: 0 !important;
+    &:hover{
+        background-color: $blanc !important;
+        color: $dark !important;
+    }
+}
+
+article {
+    position: relative;
+    overflow: hidden;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    img {
+        max-width: 95%
+    }
+    > div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 95%;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $blanc;
+        background: linear-gradient(to bottom, transparent 0%, $dark 200%);
+        > div{
+            > div {
+                display: flex;
+                justify-content: space-between;
+                a{
+                    color: $blanc;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.details{
+    border: 1px $warning solid;
+    background-color: $blanc;
+    color: $warning;
+    padding: 4px 10px;
+    font-weight: bold;
+    &:hover{
+        background-color: $warning;
+        color : $blanc;
+    }
+}
+
+.entree{
+    border: 1px $vert solid;
+    background-color: $blanc;
+    color: $vert;
+    padding: 4px 10px;
+}
